@@ -55,16 +55,18 @@
 			<br>
 			<a href="http://picocms.org/" target="_blank">Pico</a> was made by <a href="http://gilbert.pellegrom.me" target="_blank">Gilbert Pellegrom</a> from <a href="http://dev7studios.com">Dev7studios</a>.
 			<p><a href="https://github.com/julindra/pico_bootstrap" target="_blank">Pico Bootstrap</a> theme by <a href="http://renhard.net" target="_blank">Renhard Julindra</a>.</p>
-			<b>FOLLOW ME ON</b>
-			<ul class="soc">
-				{% for soc, link in config.soc_media %}
-					{% if loop.last %}
-						<li><a class="soc-{{ soc }} soc-icon-last" href="{{ link }}" target="_blank"></a></li>
-					{% else %}
-						<li><a class="soc-{{ soc }}" href="{{ link }}" target="_blank"></a></li>
-					{% endif %}
-				{% endfor %}
-			</ul>
+			{% if config.soc_media %}
+				<b>FOLLOW ME ON</b>
+				<ul class="soc">
+					{% for soc, link in config.soc_media %}
+						{% if loop.last %}
+							<li><a class="soc-{{ soc }} soc-icon-last" href="{{ link }}" target="_blank"></a></li>
+						{% else %}
+							<li><a class="soc-{{ soc }}" href="{{ link }}" target="_blank"></a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			{% endif %}
 		</div>	
 	</footer>
 	<script src="{{ theme_url }}/js/jquery.min.js"></script>
