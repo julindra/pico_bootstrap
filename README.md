@@ -4,8 +4,8 @@
 Bootstrap 3 theme for PicoCMS. Suitable for Pico 0.9.
 
 ### Instalation
-1. [Download](https://github.com/julindra/pico_bootstrap/archive/master.zip)
-2. Extract and copy folder `pico_bootstrap` to your pico plugins folder.
+1. [Download](https://github.com/julindra/pico_bootstrap/archive/master.zip).
+2. Extract and copy folder `pico_bootstrap` to your Pico `themes` folder.
 3. Open your `config/config.php`, and edit the theme to this line:
     <pre>$config['theme'] = 'pico_bootstrap';</pre>
 4. Add this lines to add the social media button at the footer of your site (If you don't need the social media button, just skip this step).
