@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>{% if meta.title %} {{ meta.title }} | {% endif %} {{ site_title }}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:site_name" content="{{ site_title }}"/>
+	{% if meta.title %}
+	<meta property="og:title" content="{{ meta.title }}" />
+	{% endif %}
+	{% if meta.description %}
+	<meta name="description" content="{{ meta.description }}"> 
+	<meta property="og:description" content="{{ meta.description }}" />
+	{% endif %}
+	{% if meta.robots %}
+	<meta name="robots" content="{{ meta.robots }}">
+	{% endif %}
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css" />
+	<link rel="stylesheet" href="{{ theme_url }}/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ theme_url }}/css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div id="content">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navnav">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="text-uppercase navbar-brand" href="{{ base_url }}"><b>{{ site_title }}</b></a>
+					</div>
+					<div class="collapse navbar-collapse" id="navnav">
+						<ul class="nav navbar-nav navbar-right">
+							{% for page in pages %}
+							<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				{% if meta.title %}<h1><b>{{ meta.title }}</b></h1><hr>{% endif %}
+				{{ content }}
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="container">
+			<br>
+			<a href="http://picocms.org/" target="_blank">Pico</a> was made by <a href="http://gilbert.pellegrom.me" target="_blank">Gilbert Pellegrom</a> from <a href="http://dev7studios.com">Dev7studios</a>.
+			<p><a href="https://github.com/julindra/pico_bootstrap" target="_blank">Pico Bootstrap</a> theme by <a href="http://renhard.net" target="_blank">Renhard Julindra</a>.</p>
+			<b>FOLLOW ME ON</b>
+			<ul class="soc">
+				{% for soc, link in config.soc_media %}
+					{% if loop.last %}
+						<li><a class="soc-{{ soc }} soc-icon-last" href="{{ link }}" target="_blank"></a></li>
+					{% else %}
+						<li><a class="soc-{{ soc }}" href="{{ link }}" target="_blank"></a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>	
+	</footer>
+	<script src="{{ theme_url }}/js/jquery.min.js"></script>
+	<script src="{{ theme_url }}/js/bootstrap.min.js"></script>
+</body>
+</html>
