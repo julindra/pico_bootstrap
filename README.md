@@ -7,11 +7,9 @@ Bootstrap 3 theme for PicoCMS. Suitable for Pico 0.9.
 1. [Download](https://github.com/julindra/pico_bootstrap/archive/master.zip)
 2. Extract and copy folder `pico_bootstrap` to your pico plugins folder.
 3. Open your `config/config.php`, and edit the theme to this line:
-    ````
-    $config['theme'] = 'pico_bootstrap';
-    ````
+    <pre>$config['theme'] = 'pico_bootstrap';</pre>
 4. Add this lines to add the social media button at the footer of your site (If you don't need the social media button, just skip this step).
-    ````
+    <pre>
     $config['soc_media'] = array(
         'facebook' => 'https://www.facebook.com/JulindraRenhard', 
         'twitter' => 'https://twitter.com/julindrarenhard',
@@ -21,7 +19,7 @@ Bootstrap 3 theme for PicoCMS. Suitable for Pico 0.9.
     	'linkedin' => 'https://id.linkedin.com/pub/renhard-julindra-jacob/71/846/495',
     	'pinterest' => 'https://id.pinterest.com/'
     );
-    ````
+    </pre>
     Note: You need to change the URL to your social media profile URL. You can change the order or remove the social media that you want to remove. 
 5. That's it.
 
