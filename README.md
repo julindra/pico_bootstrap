@@ -2,8 +2,11 @@
 
 ### Screenshot
 Header
+
 <img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-header.png" alt="Pico Bootstrap theme" width="500px">
+
 Footer
+
 <img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-footer.png" alt="Pico Bootstrap theme" width="500px">
 
 ### About
