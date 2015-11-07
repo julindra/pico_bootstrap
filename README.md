@@ -1,14 +1,5 @@
 # Pico Bootstrap
 
-### Screenshot
-Header
-
-<img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-header.png" alt="Pico Bootstrap theme" width="500px">
-
-Footer
-
-<img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-footer.png" alt="Pico Bootstrap theme" width="500px">
-
 ### About
 Bootstrap 3 theme for PicoCMS. Suitable for Pico 0.9.
 
@@ -31,6 +22,15 @@ Bootstrap 3 theme for PicoCMS. Suitable for Pico 0.9.
     </pre>
     Note: You need to change the URL to your social media profile URL. You can change the order or remove the social media that you want to remove. 
 5. That's it.
+
+### Screenshot
+Header
+
+<img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-header.png" alt="Pico Bootstrap theme" width="500px">
+
+Footer
+
+<img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-footer.png" alt="Pico Bootstrap theme" width="500px">
 
 ### About Bootstrap
 Sleek, intuitive, and powerful front-end framework for faster and easier web development.
