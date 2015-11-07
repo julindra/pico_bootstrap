@@ -1,8 +1,10 @@
 # Pico Bootstrap
 
 ### Screenshot
-![Pico Bootstrap theme](http://renhard.net/github/pico_bootstrap/pico_bootstrap-header.png)
-![Pico Bootstrap theme](http://renhard.net/github/pico_bootstrap/pico_bootstrap-footer.png)
+Header
+<img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-header.png" alt="Pico Bootstrap theme" width="200px">
+Footer
+<img src="http://renhard.net/github/pico_bootstrap/pico_bootstrap-footer.png" alt="Pico Bootstrap theme" width="200px">
 
 ### About
 Bootstrap 3 theme for PicoCMS. Suitable for Pico 0.9.
