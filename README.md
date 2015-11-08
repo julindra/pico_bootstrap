@@ -3,6 +3,11 @@
 ### About
 Bootstrap 3 theme for PicoCMS. Suitable for Pico 0.9.
 
+### TODO
+- Upgrade compability to Pico 1.0
+- Change grid
+- Add more UX
+
 ### Instalation
 1. [Download](https://github.com/julindra/pico_bootstrap/archive/master.zip).
 2. Extract and copy folder `pico_bootstrap` to your Pico `themes` folder.
